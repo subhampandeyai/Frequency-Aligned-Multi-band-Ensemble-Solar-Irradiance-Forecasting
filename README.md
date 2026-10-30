@@ -142,12 +142,6 @@ file hashes.
 
 ## Method notes
 
-The default decomposition is applied to the full series. No parameters are
-fitted from the data, so no model state crosses the split, but the wavelet
-transform is not a causal filter: a reconstructed band at time *t* draws on
-samples on both sides of *t*. Use `decompose_causal()` where a strictly causal
-representation is required.
-
 Feature construction is backward-looking throughout: rolling windows are
 trailing and lags use positive shifts.
 
